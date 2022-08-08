@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Crônometro da Sustentabilidade</title>
+  </head>
+  <body>
+    <div class="cronometro">
+      <div class="box-cron">
+        <span id="horas">00</span>
+        <span class="tempo">Horas</span>
+      </div>
+
+      <div class="box-cron">
+        <span id="minutos">00</span>
+        <span class="tempo">Minutos</span>
+      </div>
+
+      <div class="box-cron">
+        <span id="segundos">00</span>
+        <span class="tempo">Segundos</span>
+      </div>
+    </div>
+
+    <div class="btns">
+      <button id="play" onclick="start();">Iniciar</button>
+      <button id="pause" onclick="pause();">Pausar</button>
+      <button id="stop" onclick="parar();">Parar</button>
+    </div>
+
+    <div class="dados">
+      <div class="card">
+        <i class="fas fa-tree"></i>
+        <span id="arvores"> - </span>
+        <p>Árvores derrubadas</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-skull-crossbones"></i>
+        <span id="fome"> - </span>
+        <p>Pessoas mortas pela fome</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-glass-whiskey"></i>
+        <span id="agua"> - </span>
+        <p>Pessoas mortas por falta de acesso à saneamento</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-trash-alt"></i>
+        <span id="lixo"> - </span>
+        <p>Caminhão (ões) de lixo despejados no oceano</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/80275e1588.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
